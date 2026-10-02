@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sai Reddy Annem — AI/ML Engineering</title>
+<meta name="description" content="Sai Reddy Annem — AI/ML engineering student at Amrita Vishwa Vidyapeetham. Bayesian risk models, interpretable medical imaging, vision-guided drones, AI voice agents.">
+<meta property="og:title" content="Sai Reddy Annem — AI/ML Engineering">
+<meta property="og:description" content="Selected work: Bayesian disaster risk, interpretable eye-disease diagnosis, vision-guided drone landing, AI interview prep.">
+<meta property="og:image" content="https://saireddy21072007.github.io/assets/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b1a17'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23f6f3ec'%3ES%C2%B7R%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t;
+        else if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="bar" id="top">
+  <a class="mono-mark" href="#top" aria-label="Home">S<span>·</span>R</a>
+  <nav class="bar-nav" aria-label="Sections">
+    <a href="#work">Work</a><a href="#now">Now</a><a href="#path">Path</a><a href="#stack">Stack</a><a href="#research">Research</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="bar-actions">
+    <button class="kbd-btn" id="open-palette" aria-label="Open command palette"><span>Search</span><kbd id="kbd-hint">Ctrl K</kbd></button>
+    <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path class="sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14-1.41-1.41M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path class="moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ============================ HERO ============================ -->
+<section class="hero wrap">
+  <div class="hero-text">
+    <p class="eyebrow">AI / ML engineering · Coimbatore, India</p>
+    <h1>Sai Reddy Annem</h1>
+    <p class="lede">I build AI systems that keep working when the data doesn't cooperate &mdash; missing sensors, imbalanced labels, noisy live feeds &mdash; and I ship them with tests, a one-command launcher, and an honest list of what's still broken.</p>
+    <p class="sub">Third-year B.Tech, Computer Science &amp; Engineering (AI), Amrita Vishwa Vidyapeetham &middot; graduating 2028. Currently building <a href="#now">VoxAgent</a>, a multilingual AI phone receptionist for Indian small businesses.</p>
+    <div class="cta">
+      <a class="btn primary" href="#work">Selected work <span aria-hidden="true">↓</span></a>
+      <a class="btn" href="https://github.com/Saireddy21072007" target="_blank" rel="noopener">GitHub</a>
+      <button class="btn" id="copy-email" data-email="saireddyannem2007@gmail.com">Copy email</button>
+    </div>
+    <div class="status" id="live-status" aria-live="polite">
+      <span class="dot"></span><span class="status-text">Checking build status on GitHub…</span>
+    </div>
+  </div>
+
+  <div class="term" aria-label="Interactive terminal">
+    <div class="term-head"><span></span><span></span><span></span><p>sai@portfolio: ~</p></div>
+    <div class="term-body" id="term-body" tabindex="0">
+      <div id="term-out"></div>
+      <form id="term-form" autocomplete="off"><label for="term-in" class="prompt">sai@portfolio:~$</label><input id="term-in" spellcheck="false" aria-label="Terminal input" placeholder="type help"></form>
+    </div>
+  </div>
+</section>
+
+<section class="facts wrap" aria-label="At a glance">
+  <div><b>6</b><span>public repos, CI green on every one</span></div>
+  <div><b>318</b><span>automated tests across them</span></div>
+  <div><b>2</b><span>IEEE papers (1 published, 1 in review)</span></div>
+  <div><b>40/40</b><span>simulated drone landings, 2.9 cm mean error</span></div>
+</section>
+
+<!-- ============================ WORK ============================ -->
+<section id="work" class="wrap">
+  <header class="sec-head">
+    <span class="sec-no">§ 01</span>
+    <h2>Selected work</h2>
+    <p>Six projects, each with a figure you can play with. Every number on this page comes from the repository it links to.</p>
+  </header>
+
+  <!-- 1. Disaster BN -->
+  <article class="case" id="bn">
+    <div class="case-meta">
+      <span class="case-no">01</span>
+      <h3>Multi-hazard disaster risk, explained</h3>
+      <p class="tags">Bayesian networks · pgmpy · FastAPI · live weather feeds</p>
+      <p>An 18-node discrete Bayesian network turns one district's weather and river readings into flood, landslide, cyclone and heatwave probabilities &mdash; with a plain-language explanation, a confidence statement, and an action chosen by maximum expected utility. It runs on live Open-Meteo and GloFAS feeds with no API key.</p>
+      <p>The interesting result isn't the headline AUC. With every sensor reporting, gradient boosting and logistic regression win. <em>Take sensors away</em> and the BN degrades gracefully, because it marginalises what it didn't see instead of imputing it.</p>
+      <ul class="facts-list">
+        <li><b>35,072</b> real district-days used to re-learn the weather layer</li>
+        <li><b>85</b> tests &middot; team of four, course 22AIE301</li>
+      </ul>
+      <p class="links"><a href="https://github.com/Saireddy21072007/disaster-risk-bayesian-network" target="_blank" rel="noopener">Repository →</a><span class="ci" data-repo="disaster-risk-bayesian-network"></span></p>
+    </div>
+    <figure class="case-fig">
+      <div class="fig-controls">
+        <div class="seg" role="tablist" aria-label="Hazard" id="bn-hazard">
+          <button role="tab" aria-selected="true" data-h="Flood">Flood</button>
+          <button role="tab" data-h="Landslide">Landslide</button>
+          <button role="tab" data-h="Cyclone">Cyclone</button>
+          <button role="tab" data-h="Heatwave">Heatwave</button>
+        </div>
+        <label class="slider">Sensor readings missing <output id="bn-miss-out">0%</output>
+          <input type="range" id="bn-miss" min="0" max="3" step="1" value="0" aria-label="Fraction of sensor readings missing">
+        </label>
+      </div>
+      <div class="chart" id="bn-chart" role="img" aria-label="ROC-AUC by model"></div>
+      <figcaption id="bn-caption">Held-out ROC-AUC. Drag the slider to knock out sensor readings.</figcaption>
+    </figure>
+  </article>
+
+  <!-- 2. InterviewAce -->
+  <article class="case flip" id="interviewace">
+    <div class="case-meta">
+      <span class="case-no">02</span>
+      <h3>InterviewAce AI</h3>
+      <p class="tags">FastAPI · React + TypeScript · SQLAlchemy · speech-to-text · LLMs</p>
+      <p>Upload a resume, get the score an applicant-tracking system would give it, sit a voice mock interview generated from your own projects, and get a week-by-week study plan built from the gaps that interview exposed.</p>
+      <p>Design rule: <em>every AI feature has a real offline fallback.</em> Add an Anthropic, OpenAI or Gemini key and questions are written from your resume; leave it empty and a curated bank plus a heuristic scorer take over &mdash; and the header badge always says which one is running.</p>
+      <ul class="facts-list">
+        <li><b>92</b> tests, no network or API key needed</li>
+        <li>ATS score is arithmetic: fixed weights, every point traceable</li>
+      </ul>
+      <p class="links"><a href="https://github.com/Saireddy21072007/interviewace-ai" target="_blank" rel="noopener">Repository →</a><span class="ci" data-repo="interviewace-ai"></span></p>
+    </div>
+    <figure class="case-fig">
+      <div class="fig-controls">
+        <div class="seg" role="tablist" aria-label="Screen" id="ia-tabs">
+          <button role="tab" aria-selected="true" data-s="resume">Resume</button>
+          <button role="tab" data-s="report">Report</button>
+          <button role="tab" data-s="dashboard">Dashboard</button>
+          <button role="tab" data-s="roadmap">Roadmap</button>
+        </div>
+      </div>
+      <div class="shot"><img id="ia-img" src="assets/resume.webp" alt="InterviewAce resume analyzer showing a 98/100 ATS score" width="1400" height="900" loading="lazy"></div>
+      <div class="ats" id="ats" aria-label="How the ATS score is built">
+        <p class="mini-label">Where the 100 points come from &mdash; hover a bar</p>
+        <div class="ats-bar"></div>
+        <p class="ats-note" id="ats-note">Skill match · 40 — do you have the skills the role asks for</p>
+      </div>
+      <figcaption>Real screens from the running app, using the fictional sample resume in the test fixtures.</figcaption>
+    </figure>
+  </article>
+
+  <!-- 3. UAV -->
+  <article class="case" id="uav">
+    <div class="case-meta">
+      <span class="case-no">03</span>
+      <h3>Vision-guided landing on moving pads</h3>
+      <p class="tags">MuJoCo · OpenCV · AprilTags · PID + feed-forward · quaternions</p>
+      <p>A simulated quadrotor flies to a numbered address, finds the right pad with its own downward camera, tracks it while it moves, and lands. Frames are really rendered and real <code>tag36h11</code> markers are really decoded &mdash; when the drone tilts, the tag genuinely swings across the image.</p>
+      <p>The base paper's fixed-gain PID never lands on a moving pad. Step through the controller changes to see what actually fixed it.</p>
+      <ul class="facts-list">
+        <li><b>40/40</b> Monte Carlo landings &middot; 1.2 cm static, 6.8 cm moving</li>
+        <li><b>20/20</b> mid-flight diverts, 0 go-arounds</li>
+      </ul>
+      <p class="links"><a href="https://github.com/Saireddy21072007/uav-apriltag-landing-sim" target="_blank" rel="noopener">Repository →</a><span class="ci" data-repo="uav-apriltag-landing-sim"></span></p>
+    </div>
+    <figure class="case-fig">
+      <video class="shot" autoplay muted loop playsinline preload="none" poster="assets/uav_poster.jpg" aria-label="Drone flying to address and landing">
+        <source src="assets/uav_demo.webm" type="video/webm"><source src="assets/uav_demo.mp4" type="video/mp4">
+      </video>
+      <div class="ablation" id="ablation">
+        <p class="mini-label">Ablation on a moving pad &middot; 6 seeds each</p>
+        <ol class="steps" id="abl-steps"></ol>
+        <div class="seeds" id="abl-seeds" aria-live="polite"></div>
+      </div>
+      <figcaption>Simulation only: idealised motors, no latency model beyond the camera rate. Team course project, built on our team's original MuJoCo model.</figcaption>
+    </figure>
+  </article>
+
+  <!-- 4. CIPL -->
+  <article class="case flip" id="cipl">
+    <div class="case-meta">
+      <span class="case-no">04</span>
+      <h3>Interpretable eye-disease diagnosis</h3>
+      <p class="tags">PyTorch · prototype learning · CBAM attention · ODIR-5K</p>
+      <p>One forward pass over a fundus photo gives eight disease probabilities, a localisation map per disease, and a short text report naming the region the evidence came from. One branch is designed and trained from scratch with a CIPL-style prototype head; a pretrained ResNet-18 + CBAM branch measures what that constraint costs.</p>
+      <p>Biggest lesson: on a heavily imbalanced dataset, <em>loss weighting mattered more than architecture.</em> Plain BCE collapses to "no disease" for everything.</p>
+      <p class="links"><a href="https://github.com/Saireddy21072007/cipl-eye-disease-diagnosis" target="_blank" rel="noopener">Repository →</a><span class="ci" data-repo="cipl-eye-disease-diagnosis"></span></p>
+    </div>
+    <figure class="case-fig">
+      <div class="shot"><img src="assets/cipl_demo.webp" alt="Fundus image, attention map and per-disease localisation" width="1141" height="397" loading="lazy"></div>
+      <div class="fig-controls">
+        <div class="seg" role="tablist" aria-label="Metric" id="cipl-metric">
+          <button role="tab" aria-selected="true" data-m="auc">Mean AUC</button>
+          <button role="tab" data-m="f1">Macro-F1</button>
+        </div>
+      </div>
+      <div class="chart" id="cipl-chart" role="img" aria-label="Results by configuration"></div>
+      <figcaption>Validation-split numbers with an image-level split, so likely optimistic. The repo's harness now does patient-level train/val/test; re-running the grid is next.</figcaption>
+    </figure>
+  </article>
+
+  <!-- 5. GreenScale -->
+  <article class="case" id="greenscale">
+    <div class="case-meta">
+      <span class="case-no">05</span>
+      <h3>GreenScale Cloud</h3>
+      <p class="tags">Flask · scikit-learn · ECDSA · Merkle trees · scheduling</p>
+      <p>A carbon-aware multi-cloud scheduler: a gradient-boosted model predicts how a job will behave, then the scheduler picks the region <em>and</em> start hour that minimise a weighted mix of carbon, energy, cost and latency. Every decision is written as a signed transaction into a Merkle-summarised, proof-of-work ledger &mdash; edit one number and validation points at the exact record.</p>
+      <p>My part: the scheduler core and the experiment harness. Pick a policy and watch the trade-off: the pure-carbon policy wins the table and loses the customer.</p>
+      <p class="links"><a href="https://github.com/Saireddy21072007/greenscale-cloud" target="_blank" rel="noopener">Repository →</a><span class="ci" data-repo="greenscale-cloud"></span></p>
+    </div>
+    <figure class="case-fig">
+      <div class="fig-controls">
+        <div class="seg" role="tablist" aria-label="Policy" id="gs-policy"></div>
+      </div>
+      <div class="chart gs" id="gs-chart"></div>
+      <figcaption>400-job simulated trace, seed 42. Baseline is "home region, start now". Ledger overhead: 2.7 ms per transaction.</figcaption>
+    </figure>
+  </article>
+
+  <!-- 6. polylag -->
+  <article class="case flip" id="polylag">
+    <div class="case-meta">
+      <span class="case-no">06</span>
+      <h3>polylag</h3>
+      <p class="tags">asyncio · httpx · websockets · risk management</p>
+      <p>An event-driven system built to <em>measure</em> whether prediction markets lag the news: it watches feeds, matches headlines against hand-written rules, checks whether a market has not yet repriced, and only then acts &mdash; in watch or paper mode by default.</p>
+      <p>The README opens with "this will probably lose money", and the tooling is built to tell you when the edge is dead. Click a layer to see what it guards.</p>
+      <ul class="facts-list"><li><b>68</b> tests &middot; no profitability claimed anywhere</li></ul>
+      <p class="links"><a href="https://github.com/Saireddy21072007/polylag" target="_blank" rel="noopener">Repository →</a><span class="ci" data-repo="polylag"></span></p>
+    </div>
+    <figure class="case-fig">
+      <div class="pipeline" id="pl-pipe"></div>
+      <div class="layers" id="pl-layers"></div>
+      <p class="layer-note" id="pl-note"></p>
+    </figure>
+  </article>
+</section>
+
+<!-- ============================ NOW ============================ -->
+<section id="now" class="wrap now">
+  <header class="sec-head">
+    <span class="sec-no">§ 02</span>
+    <h2>Now building: VoxAgent</h2>
+    <p>A multilingual AI receptionist for Indian clinics, salons and coaching institutes &mdash; answers calls in English, Telugu and Hindi, books appointments, logs every conversation. Private while it's a product; built in stages so each one works before the next starts.</p>
+  </header>
+  <ol class="stages" id="vox-stages">
+    <li class="done"><b>Stage 1</b><span>Text receptionist with real auto-booking into Google Sheets</span></li>
+    <li class="done"><b>Stage 2</b><span>Voice: speech-to-text → the same agent → neural TTS</span></li>
+    <li class="done"><b>Stage 2.5</b><span>Live, interruptible calls with server-side voice activity detection</span></li>
+    <li class="done"><b>Stage 3</b><span>Real phone numbers via Twilio, business portal, eval suite</span></li>
+  </ol>
+  <p class="aside">Architecture choices I'd defend in an interview: one <code>llm.py</code> seam so the model provider is swappable; static facts in the prompt and live data only through tool calls &mdash; no RAG, because a salon's price list doesn't need retrieval.</p>
+</section>
+
+<!-- ============================ PATH ============================ -->
+<section id="path" class="wrap">
+  <header class="sec-head">
+    <span class="sec-no">§ 03</span>
+    <h2>Path</h2>
+    <p>From lab assignments to systems with tests.</p>
+  </header>
+  <ol class="timeline">
+    <li><time>2024</time><div><b>Started B.Tech CSE (AI)</b><p>C, Python, signal processing, maths for computing.</p></div></li>
+    <li><time>2025</time><div><b>First real ML</b><p>Job-scheduling simulator, AI demand response, and a Q-learning agent for 4×4 Tic-Tac-Toe that became an IEEE ESCI 2026 paper.</p></div></li>
+    <li><time>2025–26</time><div><b>Research &amp; data work</b><p>Hybrid CNN–ViT image forgery detection (IEEE Access, in review); IoT respiratory monitoring; DBMS knowledge portal.</p></div></li>
+    <li><time>Jul 2026</time><div><b>Started VoxAgent</b><p>From a terminal chatbot to real phone calls in under three weeks of commits.</p></div></li>
+    <li><time>Jul–Sep 2026</time><div><b>Systems with tests</b><p>Disaster-risk BN, GreenScale Cloud, InterviewAce, polylag, the drone landing simulation and the eye-disease work &mdash; each with CI on GitHub.</p></div></li>
+  </ol>
+</section>
+
+<!-- ============================ STACK ============================ -->
+<section id="stack" class="wrap">
+  <header class="sec-head">
+    <span class="sec-no">§ 04</span>
+    <h2>Stack</h2>
+    <p>Only what I've shipped something with. Hover a tool to see where it was used.</p>
+  </header>
+  <div class="stack" id="stack-grid"></div>
+  <p class="learning"><span class="mini-label">Learning</span> Agent tooling (MCP servers, LangGraph) · prototype-based interpretability · evaluation methodology for small, imbalanced medical datasets.</p>
+</section>
+
+<!-- ============================ RESEARCH ============================ -->
+<section id="research" class="wrap">
+  <header class="sec-head">
+    <span class="sec-no">§ 05</span>
+    <h2>Research</h2>
+  </header>
+  <ul class="papers">
+    <li><p class="venue">IEEE ESCI 2026 · co-author</p><p class="ptitle">Reinforcement Learning for 4×4 Tic-Tac-Toe: Q-Learning with Tactical Enhancements and Epsilon Decay</p><a href="https://doi.org/10.1109/ESCI68015.2026.11493322" target="_blank" rel="noopener">doi:10.1109/ESCI68015.2026.11493322 →</a></li>
+    <li><p class="venue">IEEE Access · co-author · under review</p><p class="ptitle">Hybridizing Local and Global Features for Image Forgery Detection Using Hybrid CNN–ViT Transformers</p></li>
+  </ul>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section id="contact" class="wrap contact">
+  <span class="sec-no">§ 06</span>
+  <h2>Open to AI/ML and backend internships,<br>and to building something useful together.</h2>
+  <div class="cta">
+    <a class="btn primary" href="mailto:saireddyannem2007@gmail.com">saireddyannem2007@gmail.com</a>
+    <a class="btn" href="https://github.com/Saireddy21072007" target="_blank" rel="noopener">github.com/Saireddy21072007</a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <p>Built by hand &mdash; plain HTML, CSS and JavaScript, no framework. Live build status comes from the GitHub API.</p>
+  <p>Press <kbd>Ctrl</kbd> <kbd>K</kbd> anywhere.</p>
+</footer>
+
+<!-- command palette -->
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command palette" hidden>
+  <div class="palette-box">
+    <input id="pal-in" placeholder="Jump to a project, section or action…" aria-label="Search commands" autocomplete="off">
+    <ul id="pal-list" role="listbox"></ul>
+    <p class="pal-foot"><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>Enter</kbd> open · <kbd>Esc</kbd> close</p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
